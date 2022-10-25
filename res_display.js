@@ -123,6 +123,10 @@ function get_idlist(id, optcnt){
     return idlist;
 }
 
+function get_id(idlist){ 
+    return idlist.split(',');
+}
+
 /* 展示单选题 */
 function display_radio(id, body, detail, property){
     var qtable = "<table><tbody>";
