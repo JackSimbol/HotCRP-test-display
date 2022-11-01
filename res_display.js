@@ -378,6 +378,7 @@ function display_form(inText, display_space){ //先生成html主体，再向主�
     }
     qstring = qstring.slice(0, qstring.length-1);
     /* <button id="submit" idlist="radio_1,slider_1,checkbox_1,text_1">submit</button> */
+    console.log(qform)
     display_space.innerHTML = qform; // display_space must be a 'div' or other space
     for(var quest of form_info){ /* To be modified */
         id = quest.qid;
