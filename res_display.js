@@ -2,7 +2,7 @@
  * 根据数据库存储的答卷信息生成结果展示
  * 以问卷的形式展示
  * 使用时只需要在网页中调用本js即可，无需额外调用qtest和autogen
- * J.S.Wang 2022.11.6
+ * J.S.Wang 2022.10.18
  */
 
 class info_res {
@@ -336,6 +336,8 @@ function prevent_Events(id){
                 document.getElementById(iid+"_slider").addEventListener("change", function(event){
                     event.preventDefault();
                 });
+                document.getElementById(iid+"_weight").disabled = true;
+                document.getElementById(iid+"_slider").disabled = true;
             }
             break;
         }
