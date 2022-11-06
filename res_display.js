@@ -300,7 +300,7 @@ function display_answer(id, answer){ // 填充答案
             break;
         }
         case "text": {
-            document.getElementById(document.getElementById("text_id")).value = answer[0];
+            document.getElementById(id + "_textarea").value = answer[0];
             break;
         }
     }
