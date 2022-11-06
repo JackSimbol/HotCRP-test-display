@@ -340,7 +340,7 @@ function prevent_Events(id){
             break;
         }
         case "text": {
-            document.getElementById(id+"_textarea").readonly = "readonly";
+            document.getElementById(id+"_textarea").readOnly = true;
             break;
         }
     }
