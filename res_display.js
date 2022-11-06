@@ -165,8 +165,6 @@ function display_slider(id, body, detail, property){
         qtable += `<div class="slider"><input type="number" id="` + oid[i] + `_weight" min="0" max="100" value="0" sid="` + oid[i] + `_slider">`;
         qtable += `<input type="range" id="` + oid[i] + `_slider" min="0" max="100" value="0" wid="` + oid[i] + `_weight"></div></td></tr>`;
     }
-    qtable += `<tr><td><button id="` + id + `_check" style="fload:left">check</button><div class="error" id="` + logid + `"></div></td></tr>`;
-    qtable += `<tr><td><button id="` + id + `_reset">reset</button></td></tr>`;
 /* An Example
  *      <tr>
             <td id="slider_1_a" sid="slider_1_a_slider" wid="slider_1_a_weight" bid="slider_1_a_body">
@@ -177,17 +175,6 @@ function display_slider(id, body, detail, property){
                     <input type="number" id="slider_1_a_weight" min="0" max="100" value="0" sid="slider_1_a_slider">
                     <input type="range" id="slider_1_a_slider" min="0" max="100" value="0" wid="slider_1_a_weight">
                 </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button id="check" style="float:left">check</button>
-                <div class="error" id="slider_1_log"></div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button id="reset">reset</button>
             </td>
         </tr>
  */
