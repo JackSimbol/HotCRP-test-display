@@ -279,7 +279,7 @@ function display_text(id, body, detail, property){
 
 function display_answer(id, answer){ // 填充答案
     if(!answer) return;
-    type = document.getElementById(id).qtype;
+    type = document.getElementById(id).getAttribute("qtype");
     switch(type){
         case "radio": {
             document.getElementById(document.getElementById(answer[0]).getAttribute("in_id")).checked = true;
@@ -307,7 +307,7 @@ function display_answer(id, answer){ // 填充答案
 }
 
 function prevent_Events(id){
-    type = document.getElementById(id).qtype;
+    type = document.getElementById(id).getAttribute("qtype");
     switch(type){
         case "radio": {
             idlist = document.getElementById(id).getAttribute("idlist").split(',');
